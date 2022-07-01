@@ -28,6 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: quarto-dev/quarto-actions/setup@v2
+      - run: python3 -m pip install jupyter 
       - uses: julia-actions/setup-julia@v1
         with:
           version: ${{ matrix.version }}
