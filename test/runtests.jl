@@ -4,6 +4,7 @@ using DataFrames
 using CSV
 using JSONTables
 using Quarto
+using IJulia
 
 @testset "OJSDefine.jl" begin
     # script tag
