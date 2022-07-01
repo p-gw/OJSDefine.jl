@@ -1,0 +1,39 @@
+---
+title: Testing `ojs_define`
+format:
+    html:
+        self-contained: true
+---
+
+```{julia}
+using Pkg
+Pkg.activate("..")
+
+using OJSDefine, DataFrames
+
+ojs_define(
+    str="1",
+    num=1.0,
+    arr=[2.0, 10.0],
+    df=DataFrame(x=randn(100), y=randn(100))
+)
+```
+
+```{ojs}
+str
+num
+arr
+df
+```
+
+```{ojs}
+Plot.plot({
+    grid: true,
+    marks: [
+        Plot.dot(df, {
+            x: "x",
+            y: "y"
+        })
+    ]
+})
+```

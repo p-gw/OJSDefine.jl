@@ -3,6 +3,12 @@ uuid = "a166a953-2d71-42f2-ad94-f6a61a8d1d38"
 authors = ["Philipp Gewessler"]
 version = "0.1.0"
 
+[deps]
+IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
+JSON3 = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
+JSONTables = "b9914132-a727-11e9-1322-f18e41205b0b"
+Tables = "bd369af6-aec1-5ad0-b16a-f7cc5008161c"
+
 [compat]
 julia = "1"
 
